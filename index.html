@@ -1,900 +1,645 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-AO">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Burger House | Hambúrgueres Artesanais</title>
 
     <meta
-        name="description"
-        content="Burger House — hambúrgueres artesanais, combos, batatas e bebidas. Faça o seu pedido pelo WhatsApp."
-    >
+      name="description"
+      content="Burger House — hambúrgueres artesanais, combos, batatas e bebidas. Faça o seu pedido pelo WhatsApp."
+    />
 
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-
+  <body>
     <!-- HEADER -->
     <header class="header" id="header">
-        <div class="container nav">
+      <div class="container nav">
+        <a href="#inicio" class="logo">
+          <span>BURGER</span>
+          <strong>HOUSE</strong>
+        </a>
 
-            <a href="#inicio" class="logo">
-                <span>BURGER</span>
-                <strong>HOUSE</strong>
-            </a>
+        <nav class="nav-menu" id="navMenu">
+          <a href="#inicio">Início</a>
+          <a href="#menu">Menu</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#galeria">Galeria</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
 
-            <nav class="nav-menu" id="navMenu">
-                <a href="#inicio">Início</a>
-                <a href="#menu">Menu</a>
-                <a href="#sobre">Sobre</a>
-                <a href="#galeria">Galeria</a>
-                <a href="#contacto">Contacto</a>
-            </nav>
+        <a href="#menu" class="nav-button"> Pedir agora </a>
 
-            <a href="#menu" class="nav-button">
-                Pedir agora
-            </a>
-
-            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
-                ☰
-            </button>
-
-        </div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+          ☰
+        </button>
+      </div>
     </header>
-
 
     <!-- HERO -->
     <main>
+      <section class="hero" id="inicio">
+        <div class="hero-overlay"></div>
 
-        <section class="hero" id="inicio">
+        <div class="container hero-content">
+          <div class="hero-text">
+            <span class="hero-tag"> O sabor que merece repetir </span>
 
-            <div class="hero-overlay"></div>
+            <h1>
+              O verdadeiro
+              <span>sabor do hambúrguer.</span>
+            </h1>
 
-            <div class="container hero-content">
+            <p>
+              Hambúrgueres artesanais preparados com ingredientes selecionados,
+              muito sabor e aquele toque especial da Burger House.
+            </p>
 
-                <div class="hero-text">
+            <div class="hero-buttons">
+              <a href="#menu" class="btn btn-primary"> Ver nosso menu </a>
 
-                    <span class="hero-tag">
-                         O sabor que merece repetir
-                    </span>
-
-                    <h1>
-                        O verdadeiro
-                        <span>sabor do hambúrguer.</span>
-                    </h1>
-
-                    <p>
-                        Hambúrgueres artesanais preparados com ingredientes
-                        selecionados, muito sabor e aquele toque especial
-                        da Burger House.
-                    </p>
-
-                    <div class="hero-buttons">
-                        <a href="#menu" class="btn btn-primary">
-                            Ver nosso menu
-                        </a>
-
-                        <a href="#sobre" class="btn btn-outline">
-                            Conheça-nos
-                        </a>
-                    </div>
-
-                    <div class="hero-info">
-
-                        <div>
-                            <strong>100%</strong>
-                            <span>Artesanal</span>
-                        </div>
-
-                        <div>
-                            <strong>15+</strong>
-                            <span>Opções</span>
-                        </div>
-
-                        <div>
-                            <strong>4.9</strong>
-                            <span>★★★★★</span>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- DESTAQUES -->
-        <section class="highlights">
-
-            <div class="container highlights-grid">
-
-                <div class="highlight">
-                    <div class="highlight-icon">🥩</div>
-                    <div>
-                        <h3>Carne selecionada</h3>
-                        <p>Preparada na hora.</p>
-                    </div>
-                </div>
-
-                <div class="highlight">
-                    <div class="highlight-icon">🍞</div>
-                    <div>
-                        <h3>Pão artesanal</h3>
-                        <p>Maciez em cada mordida.</p>
-                    </div>
-                </div>
-
-                <div class="highlight">
-                    <div class="highlight-icon">🔥</div>
-                    <div>
-                        <h3>Grelhado na hora</h3>
-                        <p>Sabor e aroma irresistíveis.</p>
-                    </div>
-                </div>
-
-                <div class="highlight">
-                    <div class="highlight-icon">🚀</div>
-                    <div>
-                        <h3>Entrega rápida</h3>
-                        <p>Receba onde estiver.</p>
-                    </div>
-                </div>
-
+              <a href="#sobre" class="btn btn-outline"> Conheça-nos </a>
             </div>
 
-        </section>
-
-
-        <!-- MENU -->
-        <section class="section menu-section" id="menu">
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <span>🍔 NOSSO MENU</span>
-
-                    <h2>
-                        Escolha o seu
-                        <strong>favorito.</strong>
-                    </h2>
-
-                    <p>
-                        Opções preparadas para transformar qualquer fome
-                        numa experiência deliciosa.
-                    </p>
-
-                </div>
-
-
-                <div class="category-buttons">
-
-                    <button class="category active" data-category="todos">
-                        Todos
-                    </button>
-
-                    <button class="category" data-category="hamburguer">
-                        Hambúrgueres
-                    </button>
-
-                    <button class="category" data-category="combo">
-                        Combos
-                    </button>
-
-                    <button class="category" data-category="acompanhamento">
-                        Acompanhamentos
-                    </button>
-
-                    <button class="category" data-category="bebida">
-                        Bebidas
-                    </button>
-
-                </div>
-
-
-                <div class="products-grid">
-
-                    <!-- PRODUTO 1 -->
-                    <article class="product-card" data-category="hamburguer">
-
-                        <div class="product-image">
-
-                            <img
-                                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=85"
-                                alt="Classic Burger"
-                            >
-
-                            <span class="product-badge">
-                                Popular
-                            </span>
-
-                        </div>
-
-                        <div class="product-content">
-
-                            <div class="product-top">
-
-                                <h3>Classic Burger</h3>
-
-                                <span class="price">
-                                    3.500 Kz
-                                </span>
-
-                            </div>
-
-                            <p>
-                                Carne bovina, queijo cheddar,
-                                alface, tomate e molho especial.
-                            </p>
-
-                            <button
-                                class="order-btn"
-                                data-product="Classic Burger"
-                            >
-                                Pedir agora →
-                            </button>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PRODUTO 2 -->
-                    <article class="product-card" data-category="hamburguer">
-
-                        <div class="product-image">
-
-                            <img
-                                src="https://images.unsplash.com/photo-1553979459-d2229ba7433a?auto=format&fit=crop&w=900&q=85"
-                                alt="Double Cheese Burger"
-                            >
-
-                        </div>
-
-                        <div class="product-content">
-
-                            <div class="product-top">
-
-                                <h3>Double Cheese</h3>
-
-                                <span class="price">
-                                    4.500 Kz
-                                </span>
-
-                            </div>
-
-                            <p>
-                                Duplo hambúrguer, cheddar,
-                                cebola caramelizada e molho da casa.
-                            </p>
-
-                            <button
-                                class="order-btn"
-                                data-product="Double Cheese"
-                            >
-                                Pedir agora →
-                            </button>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PRODUTO 3 -->
-                    <article class="product-card" data-category="hamburguer">
-
-                        <div class="product-image">
-
-                            <img
-                                src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?auto=format&fit=crop&w=900&q=85"
-                                alt="Bacon Burger"
-                            >
-
-                            <span class="product-badge">
-                                Especial
-                            </span>
-
-                        </div>
-
-                        <div class="product-content">
-
-                            <div class="product-top">
-
-                                <h3>Bacon Supreme</h3>
-
-                                <span class="price">
-                                    4.800 Kz
-                                </span>
-
-                            </div>
-
-                            <p>
-                                Carne bovina, bacon crocante,
-                                cheddar, cebola e molho barbecue.
-                            </p>
-
-                            <button
-                                class="order-btn"
-                                data-product="Bacon Supreme"
-                            >
-                                Pedir agora →
-                            </button>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PRODUTO 4 -->
-                    <article class="product-card" data-category="combo">
-
-                        <div class="product-image">
-
-                            <img
-                                src="https://images.unsplash.com/photo-1550317138-10000687a72b?auto=format&fit=crop&w=900&q=85"
-                                alt="Burger Combo"
-                            >
-
-                        </div>
-
-                        <div class="product-content">
-
-                            <div class="product-top">
-
-                                <h3>House Combo</h3>
-
-                                <span class="price">
-                                    5.500 Kz
-                                </span>
-
-                            </div>
-
-                            <p>
-                                Hambúrguer da casa, batata frita
-                                e refrigerante.
-                            </p>
-
-                            <button
-                                class="order-btn"
-                                data-product="House Combo"
-                            >
-                                Pedir agora →
-                            </button>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PRODUTO 5 -->
-                    <article class="product-card" data-category="acompanhamento">
-
-                        <div class="product-image">
-
-                            <img
-                                src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=900&q=85"
-                                alt="Batatas fritas"
-                            >
-
-                        </div>
-
-                        <div class="product-content">
-
-                            <div class="product-top">
-
-                                <h3>Batata House</h3>
-
-                                <span class="price">
-                                    1.800 Kz
-                                </span>
-
-                            </div>
-
-                            <p>
-                                Batatas crocantes acompanhadas
-                                do nosso molho especial.
-                            </p>
-
-                            <button
-                                class="order-btn"
-                                data-product="Batata House"
-                            >
-                                Pedir agora →
-                            </button>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PRODUTO 6 -->
-                    <article class="product-card" data-category="bebida">
-
-                        <div class="product-image">
-
-                            <img
-                                src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=900&q=85"
-                                alt="Bebidas"
-                            >
-
-                        </div>
-
-                        <div class="product-content">
-
-                            <div class="product-top">
-
-                                <h3>Fresh Drinks</h3>
-
-                                <span class="price">
-                                    1.200 Kz
-                                </span>
-
-                            </div>
-
-                            <p>
-                                Refrigerantes e bebidas refrescantes
-                                para acompanhar o seu pedido.
-                            </p>
-
-                            <button
-                                class="order-btn"
-                                data-product="Fresh Drinks"
-                            >
-                                Pedir agora →
-                            </button>
-
-                        </div>
-
-                    </article>
-
-                </div>
-
+            <div class="hero-info">
+              <div>
+                <strong>100%</strong>
+                <span>Artesanal</span>
+              </div>
+
+              <div>
+                <strong>15+</strong>
+                <span>Opções</span>
+              </div>
+
+              <div>
+                <strong>4.9</strong>
+                <span>★★★★★</span>
+              </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-        </section>
-
-
-        <!-- SOBRE -->
-        <section class="about section" id="sobre">
-
-            <div class="container about-grid">
-
-                <div class="about-image">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1200&q=85"
-                        alt="Interior da Burger House"
-                    >
-
-                    <div class="experience-card">
-                        <strong>5+</strong>
-                        <span>anos de sabor</span>
-                    </div>
-
-                </div>
-
-
-                <div class="about-content">
-
-                    <span class="section-label">
-                        SOBRE A BURGER HOUSE
-                    </span>
-
-                    <h2>
-                        Mais do que um hambúrguer.
-                        <strong>Uma experiência.</strong>
-                    </h2>
-
-                    <p>
-                        A Burger House nasceu da paixão por hambúrgueres
-                        preparados de forma artesanal e com ingredientes
-                        de qualidade.
-                    </p>
-
-                    <p>
-                        O nosso objetivo é simples: servir comida deliciosa,
-                        criar bons momentos e fazer com que cada cliente
-                        queira voltar.
-                    </p>
-
-                    <div class="about-list">
-
-                        <div>
-                            <span>✓</span>
-                            <p>Ingredientes selecionados</p>
-                        </div>
-
-                        <div>
-                            <span>✓</span>
-                            <p>Preparação artesanal</p>
-                        </div>
-
-                        <div>
-                            <span>✓</span>
-                            <p>Atendimento de qualidade</p>
-                        </div>
-
-                    </div>
-
-                </div>
-
+      <!-- DESTAQUES -->
+      <section class="highlights">
+        <div class="container highlights-grid">
+          <div class="highlight">
+            <div class="highlight-icon">🥩</div>
+            <div>
+              <h3>Carne selecionada</h3>
+              <p>Preparada na hora.</p>
             </div>
+          </div>
 
-        </section>
+          <div class="highlight">
+            <div class="highlight-icon">🍞</div>
+            <div>
+              <h3>Pão artesanal</h3>
+              <p>Maciez em cada mordida.</p>
+            </div>
+          </div>
 
+          <div class="highlight">
+            <div class="highlight-icon">🔥</div>
+            <div>
+              <h3>Grelhado na hora</h3>
+              <p>Sabor e aroma irresistíveis.</p>
+            </div>
+          </div>
 
-        <!-- PROMO -->
-        <section class="promo">
+          <div class="highlight">
+            <div class="highlight-icon">🚀</div>
+            <div>
+              <h3>Entrega rápida</h3>
+              <p>Receba onde estiver.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <div class="promo-overlay"></div>
+      <!-- MENU -->
+      <section class="section menu-section" id="menu">
+        <div class="container">
+          <div class="section-heading">
+            <span>🍔 NOSSO MENU</span>
 
-            <div class="container promo-content">
+            <h2>
+              Escolha o seu
+              <strong>favorito.</strong>
+            </h2>
 
-                <span>🔥 OFERTA ESPECIAL</span>
+            <p>
+              Opções preparadas para transformar qualquer fome numa experiência
+              deliciosa.
+            </p>
+          </div>
 
-                <h2>
-                    Quinta-feira é dia de
-                    <strong>Double Burger!</strong>
-                </h2>
+          <div class="category-buttons">
+            <button class="category active" data-category="todos">Todos</button>
+
+            <button class="category" data-category="hamburguer">
+              Hambúrgueres
+            </button>
+
+            <button class="category" data-category="combo">Combos</button>
+
+            <button class="category" data-category="acompanhamento">
+              Acompanhamentos
+            </button>
+
+            <button class="category" data-category="bebida">Bebidas</button>
+          </div>
+
+          <div class="products-grid">
+            <!-- PRODUTO 1 -->
+            <article class="product-card" data-category="hamburguer">
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=85"
+                  alt="Classic Burger"
+                />
+
+                <span class="product-badge"> Popular </span>
+              </div>
+
+              <div class="product-content">
+                <div class="product-top">
+                  <h3>Classic Burger</h3>
+
+                  <span class="price"> 3.500 Kz </span>
+                </div>
 
                 <p>
-                    Compre 2 hambúrgueres selecionados e receba
-                    batatas fritas grátis.
+                  Carne bovina, queijo cheddar, alface, tomate e molho especial.
                 </p>
 
-                <a href="#menu" class="btn btn-primary">
-                    Aproveitar oferta
-                </a>
+                <button class="order-btn" data-product="Classic Burger">
+                  Pedir agora →
+                </button>
+              </div>
+            </article>
 
+            <!-- PRODUTO 2 -->
+            <article class="product-card" data-category="hamburguer">
+              <div class="product-image">
+                <img src="img/duble.jpg" alt="Double Cheese Burger" />
+              </div>
+
+              <div class="product-content">
+                <div class="product-top">
+                  <h3>Double Cheese</h3>
+
+                  <span class="price"> 4.500 Kz </span>
+                </div>
+
+                <p>
+                  Duplo hambúrguer, cheddar, cebola caramelizada e molho da
+                  casa.
+                </p>
+
+                <button class="order-btn" data-product="Double Cheese">
+                  Pedir agora →
+                </button>
+              </div>
+            </article>
+
+            <!-- PRODUTO 3 -->
+            <article class="product-card" data-category="hamburguer">
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?auto=format&fit=crop&w=900&q=85"
+                  alt="Bacon Burger"
+                />
+
+                <span class="product-badge"> Especial </span>
+              </div>
+
+              <div class="product-content">
+                <div class="product-top">
+                  <h3>Bacon Supreme</h3>
+
+                  <span class="price"> 4.800 Kz </span>
+                </div>
+
+                <p>
+                  Carne bovina, bacon crocante, cheddar, cebola e molho
+                  barbecue.
+                </p>
+
+                <button class="order-btn" data-product="Bacon Supreme">
+                  Pedir agora →
+                </button>
+              </div>
+            </article>
+
+            <!-- PRODUTO 4 -->
+            <article class="product-card" data-category="combo">
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1550317138-10000687a72b?auto=format&fit=crop&w=900&q=85"
+                  alt="Burger Combo"
+                />
+              </div>
+
+              <div class="product-content">
+                <div class="product-top">
+                  <h3>House Combo</h3>
+
+                  <span class="price"> 5.500 Kz </span>
+                </div>
+
+                <p>Hambúrguer da casa, batata frita e refrigerante.</p>
+
+                <button class="order-btn" data-product="House Combo">
+                  Pedir agora →
+                </button>
+              </div>
+            </article>
+
+            <!-- PRODUTO 5 -->
+            <article class="product-card" data-category="acompanhamento">
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=900&q=85"
+                  alt="Batatas fritas"
+                />
+              </div>
+
+              <div class="product-content">
+                <div class="product-top">
+                  <h3>Batata House</h3>
+
+                  <span class="price"> 1.800 Kz </span>
+                </div>
+
+                <p>Batatas crocantes acompanhadas do nosso molho especial.</p>
+
+                <button class="order-btn" data-product="Batata House">
+                  Pedir agora →
+                </button>
+              </div>
+            </article>
+
+            <!-- PRODUTO 6 -->
+            <article class="product-card" data-category="bebida">
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=900&q=85"
+                  alt="Bebidas"
+                />
+              </div>
+
+              <div class="product-content">
+                <div class="product-top">
+                  <h3>Fresh Drinks</h3>
+
+                  <span class="price"> 1.200 Kz </span>
+                </div>
+
+                <p>
+                  Refrigerantes e bebidas refrescantes para acompanhar o seu
+                  pedido.
+                </p>
+
+                <button class="order-btn" data-product="Fresh Drinks">
+                  Pedir agora →
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- SOBRE -->
+      <section class="about section" id="sobre">
+        <div class="container about-grid">
+          <div class="about-image">
+            <img
+              src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1200&q=85"
+              alt="Interior da Burger House"
+            />
+
+            <div class="experience-card">
+              <strong>5+</strong>
+              <span>anos de sabor</span>
             </div>
+          </div>
 
-        </section>
+          <div class="about-content">
+            <span class="section-label"> SOBRE A BURGER HOUSE </span>
 
+            <h2>
+              Mais do que um hambúrguer.
+              <strong>Uma experiência.</strong>
+            </h2>
 
-        <!-- GALERIA -->
-        <section class="section gallery-section" id="galeria">
+            <p>
+              A Burger House nasceu da paixão por hambúrgueres preparados de
+              forma artesanal e com ingredientes de qualidade.
+            </p>
 
-            <div class="container">
+            <p>
+              O nosso objetivo é simples: servir comida deliciosa, criar bons
+              momentos e fazer com que cada cliente queira voltar.
+            </p>
 
-                <div class="section-heading">
+            <div class="about-list">
+              <div>
+                <span>✓</span>
+                <p>Ingredientes selecionados</p>
+              </div>
 
-                    <span>📸 GALERIA</span>
+              <div>
+                <span>✓</span>
+                <p>Preparação artesanal</p>
+              </div>
 
-                    <h2>
-                        Dá uma olhada
-                        <strong>na nossa casa.</strong>
-                    </h2>
-
-                    <p>
-                        Um ambiente descontraído para bons momentos.
-                    </p>
-
-                </div>
-
-                <div class="gallery">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=900&q=85"
-                        alt="Hambúrguer"
-                    >
-
-                    <img
-                        src="https://images.unsplash.com/photo-1579954115545-a95591f28bfc?auto=format&fit=crop&w=900&q=85"
-                        alt="Batatas"
-                    >
-
-                    <img
-                        src="https://images.unsplash.com/photo-1576618148400-5f0e0b0b0b4c?auto=format&fit=crop&w=900&q=85"
-                        alt="Restaurante"
-                    >
-
-                    <img
-                        src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=900&q=85"
-                        alt="Interior"
-                    >
-
-                </div>
-
+              <div>
+                <span>✓</span>
+                <p>Atendimento de qualidade</p>
+              </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-        </section>
+      <!-- PROMO -->
+      <section class="promo">
+        <div class="promo-overlay"></div>
 
+        <div class="container promo-content">
+          <span>🔥 OFERTA ESPECIAL</span>
 
-        <!-- TESTEMUNHOS -->
-        <section class="section testimonials">
+          <h2>
+            Quinta-feira é dia de
+            <strong>Double Burger!</strong>
+          </h2>
 
-            <div class="container">
+          <p>
+            Compre 2 hambúrgueres selecionados e receba batatas fritas grátis.
+          </p>
 
-                <div class="section-heading">
+          <a href="#menu" class="btn btn-primary"> Aproveitar oferta </a>
+        </div>
+      </section>
 
-                    <span>⭐ CLIENTES</span>
+      <!-- GALERIA -->
+      <section class="section gallery-section" id="galeria">
+        <div class="container">
+          <div class="section-heading">
+            <span>📸 GALERIA</span>
 
-                    <h2>
-                        Quem prova,
-                        <strong>recomenda.</strong>
-                    </h2>
+            <h2>
+              Dá uma olhada
+              <strong>na nossa casa.</strong>
+            </h2>
 
-                </div>
+            <p>Um ambiente descontraído para bons momentos.</p>
+          </div>
+               
+           <marquee behavior="alternate">
+          <div class="gallery">
+            <img
+              src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=900&q=85"
+              alt="Hambúrguer"
+            />
 
+            <img
+              src="https://images.unsplash.com/photo-1579954115545-a95591f28bfc?auto=format&fit=crop&w=900&q=85"
+              alt="Batatas"
+            />
 
-                <div class="testimonial-grid">
+            <img
+              src="img/joseph-gonzalez-zcUgjyqEwe8-unsplash.jpg"
+              alt="Restaurante"
+            />
 
-                    <article class="testimonial">
+            <img
+              src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=900&q=85"
+              alt="Interior"
+            />
+          </div>
+        </div>
+      </section>
+      </marquee>
 
-                        <div class="stars">
-                            ★★★★★
-                        </div>
+      <!-- TESTEMUNHOS -->
+      <section class="section testimonials">
+        <div class="container">
+          <div class="section-heading">
+            <span>⭐ CLIENTES</span>
 
-                        <p>
-                            “O hambúrguer estava incrível!
-                            A carne estava no ponto e o molho
-                            fez toda a diferença.”
-                        </p>
+            <h2>
+              Quem prova,
+              <strong>recomenda.</strong>
+            </h2>
+          </div>
 
-                        <div class="client">
-                            <div class="avatar">M</div>
+          <div class="testimonial-grid">
+            <article class="testimonial">
+              <div class="stars">★★★★★</div>
 
-                            <div>
-                                <strong>Mariana</strong>
-                                <span>Cliente</span>
-                            </div>
-                        </div>
+              <p>
+                “O hambúrguer estava incrível! A carne estava no ponto e o molho
+                fez toda a diferença.”
+              </p>
 
-                    </article>
-
-
-                    <article class="testimonial">
-
-                        <div class="stars">
-                            ★★★★★
-                        </div>
-
-                        <p>
-                            “Ambiente muito agradável e atendimento
-                            excelente. Com certeza vou voltar.”
-                        </p>
-
-                        <div class="client">
-                            <div class="avatar">J</div>
-
-                            <div>
-                                <strong>João</strong>
-                                <span>Cliente</span>
-                            </div>
-                        </div>
-
-                    </article>
-
-
-                    <article class="testimonial">
-
-                        <div class="stars">
-                            ★★★★★
-                        </div>
-
-                        <p>
-                            “O Double Cheese é simplesmente absurdo.
-                            Já virou o meu favorito.”
-                        </p>
-
-                        <div class="client">
-                            <div class="avatar">A</div>
-
-                            <div>
-                                <strong>André</strong>
-                                <span>Cliente</span>
-                            </div>
-                        </div>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- CTA -->
-        <section class="cta">
-
-            <div class="container cta-content">
+              <div class="client">
+                <div class="avatar">M</div>
 
                 <div>
-                    <span>🍔 ESTÁ COM FOME?</span>
-
-                    <h2>
-                        Seu próximo hambúrguer
-                        está a um clique.
-                    </h2>
+                  <strong>Mariana</strong>
+                  <span>Cliente</span>
                 </div>
+              </div>
+            </article>
 
-                <a
-                    href="https://wa.me/244923000000?text=Olá%20Burger%20House!%20Gostaria%20de%20fazer%20um%20pedido."
-                    target="_blank"
-                    class="btn btn-light"
-                >
-                    Pedir pelo WhatsApp
-                </a>
+            <article class="testimonial">
+              <div class="stars">★★★★★</div>
 
+              <p>
+                “Ambiente muito agradável e atendimento excelente. Com certeza
+                vou voltar.”
+              </p>
+
+              <div class="client">
+                <div class="avatar">J</div>
+
+                <div>
+                  <strong>João</strong>
+                  <span>Cliente</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial">
+              <div class="stars">★★★★★</div>
+
+              <p>
+                “O Double Cheese é simplesmente absurdo. Já virou o meu
+                favorito.”
+              </p>
+
+              <div class="client">
+                <div class="avatar">A</div>
+
+                <div>
+                  <strong>André</strong>
+                  <span>Cliente</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="cta">
+        <div class="container cta-content">
+          <div>
+            <span>🍔 ESTÁ COM FOME?</span>
+
+            <h2>Seu próximo hambúrguer está a um clique.</h2>
+          </div>
+
+          <a
+            href="https://wa.me/244923000000?text=Olá%20Burger%20House!%20Gostaria%20de%20fazer%20um%20pedido."
+            target="_blank"
+            class="btn btn-light"
+          >
+            Pedir pelo WhatsApp
+          </a>
+        </div>
+      </section>
+
+      <!-- CONTACTO -->
+      <section class="section contact-section" id="contacto">
+        <div class="container contact-grid">
+          <div class="contact-info">
+            <span class="section-label"> FALE CONNOSCO </span>
+
+            <h2>
+              Venha comer
+              <strong>com a gente.</strong>
+            </h2>
+
+            <p>
+              Estamos prontos para preparar o seu próximo hambúrguer favorito.
+            </p>
+
+            <div class="contact-items">
+              <div class="contact-item">
+                <span>📍</span>
+
+                <div>
+                  <strong>Localização</strong>
+                  <p>Luanda, Angola</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <span>📞</span>
+
+                <div>
+                  <strong>Telefone</strong>
+                  <p>+244 923 000 000</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <span>🕐</span>
+
+                <div>
+                  <strong>Horário</strong>
+                  <p>Seg - Dom: 11h00 - 23h00</p>
+                </div>
+              </div>
             </div>
+          </div>
 
-        </section>
+          <div class="contact-card">
+            <h3>Faça o seu pedido</h3>
 
+            <p>Clique no botão abaixo e fale diretamente com a nossa equipa.</p>
 
-        <!-- CONTACTO -->
-        <section class="section contact-section" id="contacto">
+            <a
+              href="https://wa.me/244923000000?text=Olá%20Burger%20House!%20Quero%20fazer%20um%20pedido."
+              target="_blank"
+              class="whatsapp-btn"
+            >
+              <span>💬</span>
+              Pedir pelo WhatsApp
+            </a>
 
-            <div class="container contact-grid">
-
-                <div class="contact-info">
-
-                    <span class="section-label">
-                        FALE CONNOSCO
-                    </span>
-
-                    <h2>
-                        Venha comer
-                        <strong>com a gente.</strong>
-                    </h2>
-
-                    <p>
-                        Estamos prontos para preparar o seu próximo
-                        hambúrguer favorito.
-                    </p>
-
-                    <div class="contact-items">
-
-                        <div class="contact-item">
-                            <span>📍</span>
-
-                            <div>
-                                <strong>Localização</strong>
-                                <p>Luanda, Angola</p>
-                            </div>
-                        </div>
-
-                        <div class="contact-item">
-                            <span>📞</span>
-
-                            <div>
-                                <strong>Telefone</strong>
-                                <p>+244 923 000 000</p>
-                            </div>
-                        </div>
-
-                        <div class="contact-item">
-                            <span>🕐</span>
-
-                            <div>
-                                <strong>Horário</strong>
-                                <p>Seg - Dom: 11h00 - 23h00</p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <div class="contact-card">
-
-                    <h3>Faça o seu pedido</h3>
-
-                    <p>
-                        Clique no botão abaixo e fale diretamente
-                        com a nossa equipa.
-                    </p>
-
-                    <a
-                        href="https://wa.me/244923000000?text=Olá%20Burger%20House!%20Quero%20fazer%20um%20pedido."
-                        target="_blank"
-                        class="whatsapp-btn"
-                    >
-                        <span>💬</span>
-                        Pedir pelo WhatsApp
-                    </a>
-
-                    <small>
-                        Atendimento rápido e personalizado.
-                    </small>
-
-                </div>
-
-            </div>
-
-        </section>
-
+            <small> Atendimento rápido e personalizado. </small>
+          </div>
+        </div>
+      </section>
     </main>
-
 
     <!-- FOOTER -->
     <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="#inicio" class="logo footer-logo">
+            <span>BURGER</span>
+            <strong>HOUSE</strong>
+          </a>
 
-        <div class="container footer-grid">
-
-            <div>
-
-                <a href="#inicio" class="logo footer-logo">
-                    <span>BURGER</span>
-                    <strong>HOUSE</strong>
-                </a>
-
-                <p>
-                    Hambúrgueres artesanais,
-                    momentos inesquecíveis.
-                </p>
-
-            </div>
-
-
-            <div>
-
-                <h4>Links</h4>
-
-                <a href="#inicio">Início</a>
-                <a href="#menu">Menu</a>
-                <a href="#sobre">Sobre</a>
-                <a href="#contacto">Contacto</a>
-
-            </div>
-
-
-            <div>
-
-                <h4>Redes sociais</h4>
-
-                <a href="#">Instagram</a>
-                <a href="#">Facebook</a>
-                <a href="#">TikTok</a>
-
-            </div>
-
-
-            <div>
-
-                <h4>Contacto</h4>
-
-                <p>+244 923 000 000</p>
-                <p>Luanda, Angola</p>
-
-            </div>
-
+          <p>Hambúrgueres artesanais, momentos inesquecíveis.</p>
         </div>
 
+        <div>
+          <h4>Links</h4>
 
-        <div class="footer-bottom">
-
-            <p>
-                © <span id="year"></span> Burger House.
-                Todos os direitos reservados.
-            </p>
-
-            <p>
-                Website desenvolvido pela
-                <strong>Pytrion</strong>.
-            </p>
-
+          <a href="#inicio">Início</a>
+          <a href="#menu">Menu</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#contacto">Contacto</a>
         </div>
 
+        <div>
+          <h4>Redes sociais</h4>
+
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">TikTok</a>
+        </div>
+
+        <div>
+          <h4>Contacto</h4>
+
+          <p>+244 923 000 000</p>
+          <p>Luanda, Angola</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          © <span id="year"></span> Burger House. Todos os direitos reservados.
+        </p>
+
+        <p>
+          Website desenvolvido pela
+          <strong>Pytrion</strong>.
+        </p>
+      </div>
     </footer>
-
 
     <!-- BOTÃO WHATSAPP -->
     <a
-        class="floating-whatsapp"
-        href="https://wa.me/244923000000?text=Olá%20Burger%20House!%20Gostaria%20de%20fazer%20um%20pedido."
-        target="_blank"
-        aria-label="WhatsApp"
+      class="floating-whatsapp"
+      href="https://wa.me/244923000000?text=Olá%20Burger%20House!%20Gostaria%20de%20fazer%20um%20pedido."
+      target="_blank"
+      aria-label="WhatsApp"
     >
-        💬
+      💬
     </a>
 
-
     <script src="script.js"></script>
-
-</body>
+  </body>
 </html>
